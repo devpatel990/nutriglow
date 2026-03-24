@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NutriGlow Wellness - Transform your health with smart nutrition. Personalized diet plans, expert guidance, and real results.">
+    <title>NutriGlow Wellness | Smart Nutrition & Wellness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
+                        <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
+                    </svg>
+                </div>
+                <span>NutriGlow<span class="logo-accent">Wellness</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div id="three-canvas"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-animate="fade-up">
+                Transform Your Health<br>with <span class="highlight">Smart Nutrition</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                Personalized diet plans, expert guidance, and real results
+            </p>
+            <div class="hero-buttons" data-animate="fade-up" data-delay="400">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#contact" class="btn btn-secondary">Book Consultation</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-3d-element">
+                            <div class="fruit apple"></div>
+                            <div class="fruit orange"></div>
+                            <div class="leaf leaf-1"></div>
+                            <div class="leaf leaf-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Your Journey to Better Health Starts Here</h2>
+                    <p class="about-text">
+                        At NutriGlow Wellness, we believe that nutrition is the foundation of a vibrant, healthy life. 
+                        Our team of certified nutritionists and wellness experts is dedicated to helping you achieve 
+                        your health goals through personalized meal plans, scientific guidance, and ongoing support.
+                    </p>
+                    <div class="expertise-grid">
+                        <div class="expertise-item" data-animate="zoom-in" data-delay="100">
+                            <div class="expertise-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h4>Nutrition</h4>
+                            <p>Balanced diets tailored to your body's needs</p>
+                        </div>
+                        <div class="expertise-item" data-animate="zoom-in" data-delay="200">
+                            <div class="expertise-icon">
+                                <i class="fas fa-weight"></i>
+                            </div>
+                            <h4>Weight Loss</h4>
+                            <p>Sustainable weight management programs</p>
+                        </div>
+                        <div class="expertise-item" data-animate="zoom-in" data-delay="300">
+                            <div class="expertise-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h4>Muscle Gain</h4>
+                            <p>Strength building nutrition plans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive Wellness Solutions</h2>
+                <p class="section-subtitle">Tailored programs designed to meet your unique health goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-fire-alt"></i>
+                    </div>
+                    <h3>Weight Loss Programs</h3>
+                    <p>Customized meal plans and lifestyle modifications for sustainable weight loss</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Personalized meal plans</li>
+                        <li><i class="fas fa-check"></i> Calorie tracking</li>
+                        <li><i class="fas fa-check"></i> Weekly progress monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Muscle Gain Plans</h3>
+                    <p>Scientific nutrition strategies to build lean muscle and strength</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> High-protein diets</li>
+                        <li><i class="fas fa-check"></i> Macros calculator</li>
+                        <li><i class="fas fa-check"></i> Pre/post workout nutrition</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Diet Consultation</h3>
+                    <p>One-on-one sessions with certified nutritionists for detailed guidance</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Body analysis</li>
+                        <li><i class="fas fa-check"></i> Custom diet plans</li>
+                        <li><i class="fas fa-check"></i> Supplement guidance</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Online Coaching</h3>
+                    <p>Virtual sessions and ongoing support from anywhere in the world</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video consultations</li>
+                        <li><i class="fas fa-check"></i> Chat support</li>
+                        <li><i class="fas fa-check"></i> Resource library</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real stories of transformation and success</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Priya Sharma">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Priya Sharma</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Lost 15kg in 4 months! The personalized meal plan made all the difference. I feel more energetic and confident than ever."</p>
+                    <span class="testimonial-result">Lost 15kg | 4 months</span>
+                </div>
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Rahul Verma">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Rahul Verma</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Gained 8kg of muscle mass with proper nutrition guidance. The protein-focused diet plan was exactly what I needed."</p>
+                    <span class="testimonial-result">Gained 8kg muscle | 6 months</span>
+                </div>
+                <div class="testimonial-card" data-animate="fade-up" data-delay="300">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Anjali Gupta">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Anjali Gupta</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The online coaching was so convenient. Got my energy back and finally overcame my chronic fatigue issues."</p>
+                    <span class="testimonial-result">Recovered energy | 3 months</span>
+                </div>
+                <div class="testimonial-card" data-animate="fade-up" data-delay="400">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Amit Kumar">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Amit Kumar</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Best investment in my health. The diet consultation helped me understand my body better and make sustainable changes."</p>
+                    <span class="testimonial-result">Improved health | 5 months</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Pricing Plans</span>
+                <h2 class="section-title">Choose Your Wellness Journey</h2>
+                <p class="section-subtitle">Affordable plans tailored to your goals</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-animate="fade-up" data-delay="100">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                        <div class="pricing-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Personalized meal plan</li>
+                        <li><i class="fas fa-check"></i> Weekly check-ins</li>
+                        <li><i class="fas fa-check"></i> Basic diet guidelines</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Video consultations</li>
+                        <li class="disabled"><i class="fas fa-times"></i> 24/7 support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card popular" data-animate="fade-up" data-delay="200">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Plan</h3>
+                        <div class="pricing-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">1999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Advanced meal plan</li>
+                        <li><i class="fas fa-check"></i> Bi-weekly check-ins</li>
+                        <li><i class="fas fa-check"></i> Detailed diet guidelines</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> 2 video consultations</li>
+                        <li class="disabled"><i class="fas fa-times"></i> 24/7 support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card premium" data-animate="fade-up" data-delay="300">
+                    <div class="premium-glow"></div>
+                    <div class="pricing-header">
+                        <h3>Premium Plan</h3>
+                        <div class="pricing-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">2999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full meal plan + snacks</li>
+                        <li><i class="fas fa-check"></i> Weekly check-ins</li>
+                        <li><i class="fas fa-check"></i> Comprehensive guidelines</li>
+                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                        <li><i class="fas fa-check"></i> Unlimited video calls</li>
+                        <li><i class="fas fa-check"></i> Custom supplement plan</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-premium">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to help you on your wellness journey</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Lucknow City, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 11111 xxxxx</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+91 98765 xxxxx</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>support@nutriglowwellness.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map" data-animate="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38274884608!2d80.9462974085716!3d26.84868128442811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bf4d0b6b3b3b3%3A0x3b3b3b3b3b3b3b3b3!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635959481000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
+                                <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
+                            </svg>
+                        </div>
+                        <span>NutriGlow Wellness</span>
+                    </a>
+                    <p class="footer-tagline">Transforming lives through smart nutrition and holistic wellness.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Weight Loss</a></li>
+                        <li><a href="#services">Muscle Gain</a></li>
+                        <li><a href="#services">Diet Consultation</a></li>
+                        <li><a href="#services">Online Coaching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Lucknow, UP</p>
+                    <p><i class="fas fa-phone"></i> +91 11111 xxxxx</p>
+                    <p><i class="fas fa-envelope"></i> support@nutriglowwellness.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NutriGlow Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/9198765xxxxx" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

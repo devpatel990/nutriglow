@@ -13,15 +13,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
-                        <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
-                    </svg>
-                </div>
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
+                    <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
+                </svg>
                 <span>NutriGlow<span class="logo-accent">Wellness</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -44,13 +42,13 @@
         <div id="three-canvas"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title" data-animate="fade-up">
+            <h1 class="hero-title">
                 Transform Your Health<br>with <span class="highlight">Smart Nutrition</span>
             </h1>
-            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+            <p class="hero-subtitle">
                 Personalized diet plans, expert guidance, and real results
             </p>
-            <div class="hero-buttons" data-animate="fade-up" data-delay="400">
+            <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Get Started</a>
                 <a href="#contact" class="btn btn-secondary">Book Consultation</a>
             </div>
@@ -65,7 +63,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image" data-animate="fade-right">
+                <div class="about-image">
                     <div class="about-image-wrapper">
                         <div class="about-3d-element">
                             <div class="fruit apple"></div>
@@ -75,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-content" data-animate="fade-left">
+                <div class="about-content">
                     <span class="section-tag">About Us</span>
                     <h2 class="section-title">Your Journey to Better Health Starts Here</h2>
                     <p class="about-text">
@@ -84,21 +82,21 @@
                         your health goals through personalized meal plans, scientific guidance, and ongoing support.
                     </p>
                     <div class="expertise-grid">
-                        <div class="expertise-item" data-animate="zoom-in" data-delay="100">
+                        <div class="expertise-item">
                             <div class="expertise-icon">
                                 <i class="fas fa-apple-alt"></i>
                             </div>
                             <h4>Nutrition</h4>
-                            <p>Balanced diets tailored to your body's needs</p>
+                            <p>Balanced diets tailored to your needs</p>
                         </div>
-                        <div class="expertise-item" data-animate="zoom-in" data-delay="200">
+                        <div class="expertise-item">
                             <div class="expertise-icon">
-                                <i class="fas fa-weight"></i>
+                                <i class="fas fa-weight-hanging"></i>
                             </div>
                             <h4>Weight Loss</h4>
-                            <p>Sustainable weight management programs</p>
+                            <p>Sustainable weight management</p>
                         </div>
-                        <div class="expertise-item" data-animate="zoom-in" data-delay="300">
+                        <div class="expertise-item">
                             <div class="expertise-icon">
                                 <i class="fas fa-dumbbell"></i>
                             </div>
@@ -113,13 +111,13 @@
 
     <section class="services" id="services">
         <div class="container">
-            <div class="section-header" data-animate="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Our Services</span>
                 <h2 class="section-title">Comprehensive Wellness Solutions</h2>
                 <p class="section-subtitle">Tailored programs designed to meet your unique health goals</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-animate="fade-up" data-delay="100">
+                <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-fire-alt"></i>
                     </div>
@@ -131,7 +129,7 @@
                         <li><i class="fas fa-check"></i> Weekly progress monitoring</li>
                     </ul>
                 </div>
-                <div class="service-card" data-animate="fade-up" data-delay="200">
+                <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
@@ -143,7 +141,7 @@
                         <li><i class="fas fa-check"></i> Pre/post workout nutrition</li>
                     </ul>
                 </div>
-                <div class="service-card" data-animate="fade-up" data-delay="300">
+                <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
@@ -155,9 +153,9 @@
                         <li><i class="fas fa-check"></i> Supplement guidance</li>
                     </ul>
                 </div>
-                <div class="service-card" data-animate="fade-up" data-delay="400">
+                <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-laptop"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Online Coaching</h3>
                     <p>Virtual sessions and ongoing support from anywhere in the world</p>
@@ -173,13 +171,13 @@
 
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <div class="section-header" data-animate="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Testimonials</span>
                 <h2 class="section-title">What Our Clients Say</h2>
                 <p class="section-subtitle">Real stories of transformation and success</p>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-avatar">
                             <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Priya Sharma">
@@ -196,9 +194,9 @@
                         </div>
                     </div>
                     <p class="testimonial-text">"Lost 15kg in 4 months! The personalized meal plan made all the difference. I feel more energetic and confident than ever."</p>
-                    <span class="testimonial-result">Lost 15kg | 4 months</span>
+                    <span class="testimonial-result">Lost 15kg - 4 months</span>
                 </div>
-                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-avatar">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Rahul Verma">
@@ -215,9 +213,9 @@
                         </div>
                     </div>
                     <p class="testimonial-text">"Gained 8kg of muscle mass with proper nutrition guidance. The protein-focused diet plan was exactly what I needed."</p>
-                    <span class="testimonial-result">Gained 8kg muscle | 6 months</span>
+                    <span class="testimonial-result">Gained 8kg muscle - 6 months</span>
                 </div>
-                <div class="testimonial-card" data-animate="fade-up" data-delay="300">
+                <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-avatar">
                             <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Anjali Gupta">
@@ -234,9 +232,9 @@
                         </div>
                     </div>
                     <p class="testimonial-text">"The online coaching was so convenient. Got my energy back and finally overcame my chronic fatigue issues."</p>
-                    <span class="testimonial-result">Recovered energy | 3 months</span>
+                    <span class="testimonial-result">Recovered energy - 3 months</span>
                 </div>
-                <div class="testimonial-card" data-animate="fade-up" data-delay="400">
+                <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-avatar">
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Amit Kumar">
@@ -253,7 +251,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">"Best investment in my health. The diet consultation helped me understand my body better and make sustainable changes."</p>
-                    <span class="testimonial-result">Improved health | 5 months</span>
+                    <span class="testimonial-result">Improved health - 5 months</span>
                 </div>
             </div>
         </div>
@@ -261,13 +259,13 @@
 
     <section class="pricing" id="pricing">
         <div class="container">
-            <div class="section-header" data-animate="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Pricing Plans</span>
                 <h2 class="section-title">Choose Your Wellness Journey</h2>
                 <p class="section-subtitle">Affordable plans tailored to your goals</p>
             </div>
             <div class="pricing-grid">
-                <div class="pricing-card" data-animate="fade-up" data-delay="100">
+                <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Basic Plan</h3>
                         <div class="pricing-price">
@@ -286,8 +284,8 @@
                     </ul>
                     <a href="#contact" class="btn btn-outline">Get Started</a>
                 </div>
-                <div class="pricing-card popular" data-animate="fade-up" data-delay="200">
-                    <div class="popular-badge">Most Popular</div>
+                <div class="pricing-card popular">
+                    <span class="popular-badge">Most Popular</span>
                     <div class="pricing-header">
                         <h3>Pro Plan</h3>
                         <div class="pricing-price">
@@ -306,8 +304,7 @@
                     </ul>
                     <a href="#contact" class="btn btn-primary">Get Started</a>
                 </div>
-                <div class="pricing-card premium" data-animate="fade-up" data-delay="300">
-                    <div class="premium-glow"></div>
+                <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Premium Plan</h3>
                         <div class="pricing-price">
@@ -332,13 +329,13 @@
 
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header" data-animate="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Contact Us</span>
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">We're here to help you on your wellness journey</p>
             </div>
             <div class="contact-grid">
-                <div class="contact-info" data-animate="fade-right">
+                <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -376,11 +373,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-map" data-animate="fade-left">
+                <div class="contact-map">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38274884608!2d80.9462974085716!3d26.84868128442811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bf4d0b6b3b3b3%3A0x3b3b3b3b3b3b3b3b3!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635959481000!5m2!1sen!2sin" 
                         width="100%" 
-                        height="400" 
+                        height="350" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy">
@@ -395,12 +392,10 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
-                        <div class="logo-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
-                                <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
-                            </svg>
-                        </div>
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C13.5 4 15 6 15 8.5C15 11 13.5 13 12 13C10.5 13 9 11 9 8.5C9 6 10.5 4 12 2Z" fill="#16a34a"/>
+                            <path d="M12 13C14 15 17 17 20 17C21 17 22 16 22 15C22 12 18 9 12 9C6 9 2 12 2 15C2 16 3 17 4 17C7 17 10 15 12 13Z" fill="#10b981"/>
+                        </svg>
                         <span>NutriGlow Wellness</span>
                     </a>
                     <p class="footer-tagline">Transforming lives through smart nutrition and holistic wellness.</p>
